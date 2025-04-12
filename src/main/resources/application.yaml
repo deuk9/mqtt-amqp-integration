@@ -1,0 +1,18 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin123
+
+mqtt:
+  broker-url: tcp://localhost:1884
+  username: admin
+  password: admin123
+  publisher:
+    client-id: mqtt-publisher
+    topic: protocols/amqp/car
+  subscriber:
+    client-id: mqtt-subscriber
+    topic: protocols/mqtt/airplane
+
